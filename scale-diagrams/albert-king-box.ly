@@ -20,7 +20,7 @@
         (place-fret 1 8 "♭3" inverted)
         (place-fret 1 10 "4" inverted burlywood4))
       \vspace #0.5
-      "Major pentatonic, position 2"
+      "Minor pentatonic, position 2"
     }
   }
 }
