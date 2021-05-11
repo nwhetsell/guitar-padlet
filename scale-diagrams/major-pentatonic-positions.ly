@@ -7,17 +7,17 @@
   \fret-diagram-container {
     \center-column {
       \fret-diagram-verbose #'(
-        (place-fret 6 8 "1")
+        (place-fret 6  8 "1")
         (place-fret 6 10 "2" inverted burlywood4)
-        (place-fret 5 7 "3" inverted)
+        (place-fret 5  7 "3" inverted)
         (place-fret 5 10 "5" inverted)
-        (place-fret 4 7 "6" inverted burlywood4)
+        (place-fret 4  7 "6" inverted burlywood4)
         (place-fret 4 10 "1")
-        (place-fret 3 7 "2" inverted burlywood4)
-        (place-fret 3 9 "3" inverted)
-        (place-fret 2 8 "5" inverted)
+        (place-fret 3  7 "2" inverted burlywood4)
+        (place-fret 3  9 "3" inverted)
+        (place-fret 2  8 "5" inverted)
         (place-fret 2 10 "6" inverted burlywood4)
-        (place-fret 1 8 "1")
+        (place-fret 1  8 "1")
         (place-fret 1 10 "2" inverted burlywood4))
       \vspace #0.5
       "Position 1"
@@ -31,7 +31,7 @@
         (place-fret 5 12 "6" inverted burlywood4)
         (place-fret 4 10 "1")
         (place-fret 4 12 "2" inverted burlywood4)
-        (place-fret 3 9 "3" inverted)
+        (place-fret 3  9 "3" inverted)
         (place-fret 3 12 "5" inverted)
         (place-fret 2 10 "6" inverted burlywood4)
         (place-fret 2 13 "1")

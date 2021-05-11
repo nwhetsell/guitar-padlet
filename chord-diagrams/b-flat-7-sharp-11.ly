@@ -14,7 +14,7 @@
     (place-fret 6 6 "B♭")
     (mute 5)
     (place-fret 4 6 "A♭" inverted)
-    (place-fret 3 7 "D" inverted)
+    (place-fret 3 7 "D"  inverted)
     (place-fret 2 5 "E♮" inverted)
     (mute 1))
 
