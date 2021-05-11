@@ -23,8 +23,7 @@
         (place-fret 2 10 "6" inverted burlywood4)
         (place-fret 1 7 "7" inverted plum4)
         (place-fret 1 8 "1")
-        (place-fret 1 10 "2" inverted burlywood4)
-      )
+        (place-fret 1 10 "2" inverted burlywood4))
       \vspace #0.5
       "Ionian (major)"
 
@@ -46,8 +45,7 @@
         (place-fret 2 10 "6" inverted burlywood4)
         (place-fret 2 11 "♭7" inverted plum4)
         (place-fret 1 8 "1")
-        (place-fret 1 10 "2" inverted burlywood4)
-      )
+        (place-fret 1 10 "2" inverted burlywood4))
       \vspace #0.5
       "Mixolydian"
 
@@ -70,8 +68,7 @@
         (place-fret 2 10 "6" inverted burlywood4)
         (place-fret 1 7 "7" inverted plum4)
         (place-fret 1 8 "1")
-        (place-fret 1 10 "2" inverted burlywood4)
-      )
+        (place-fret 1 10 "2" inverted burlywood4))
       \vspace #0.5
       "Lydian"
     }
@@ -96,8 +93,7 @@
         (place-fret 2 8 "♭7" inverted burlywood4)
         (place-fret 1 5 "1")
         (place-fret 1 7 "2" inverted plum4)
-        (place-fret 1 8 "♭3" inverted)
-      )
+        (place-fret 1 8 "♭3" inverted))
       \vspace #0.5
       "Aeolian (natural minor)"
 
@@ -120,8 +116,7 @@
         (place-fret 2 8 "♭7" inverted burlywood4)
         (place-fret 1 5 "1")
         (place-fret 1 7 "2" inverted plum4)
-        (place-fret 1 8 "♭3" inverted)
-      )
+        (place-fret 1 8 "♭3" inverted))
       \vspace #0.5
       "Dorian"
 
@@ -144,8 +139,7 @@
         (place-fret 2 8 "♭7" inverted burlywood4)
         (place-fret 1 5 "1")
         (place-fret 1 6 "♭2" inverted plum4)
-        (place-fret 1 8 "♭3" inverted)
-      )
+        (place-fret 1 8 "♭3" inverted))
       \vspace #0.5
       "Phrygian"
 
@@ -168,8 +162,7 @@
         (place-fret 2 8 "♭7" inverted burlywood4)
         (place-fret 1 5 "1")
         (place-fret 1 6 "♭2" inverted plum4)
-        (place-fret 1 8 "♭3" inverted)
-      )
+        (place-fret 1 8 "♭3" inverted))
       \vspace #0.5
       "Locrian"
     }

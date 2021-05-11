@@ -27,7 +27,6 @@
       (place-fret 1 10 "4" inverted burlywood4)
 
       (place-fret 1 11 "♭5" inverted thistle)
-      (place-fret 1 12 "5" inverted grey75)
-    )
+      (place-fret 1 12 "5" inverted grey75))
   }
 }

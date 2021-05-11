@@ -63,7 +63,6 @@
       (place-fret 2 8 "♭7" inverted burlywood4)
       (place-fret 1 5 "1")
       (place-fret 1 6 "♭2" inverted plum4)
-      (place-fret 1 8 "♭3" inverted grey75)
-    )
+      (place-fret 1 8 "♭3" inverted grey75))
   }
 }

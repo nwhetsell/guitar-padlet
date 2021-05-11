@@ -20,8 +20,7 @@ dorian-position-five = \markup {
     (place-fret 2 15 "G" inverted burlywood4)
     (place-fret 1 12 "A" inverted)
     (place-fret 1 14 "B" inverted plum4)
-    (place-fret 1 15 "C" inverted burlywood4)
-  )
+    (place-fret 1 15 "C" inverted burlywood4))
 }
 
 fret-diagram-size = 2.5
@@ -58,8 +57,7 @@ music = {
         (place-fret 2 5 "A" inverted)
         (place-fret 2 7 "B" inverted plum4)
         (place-fret 2 8 "C" inverted burlywood4)
-        (place-fret 1 5 "D")
-      )
+        (place-fret 1 5 "D"))
     } c b a \set TabStaff.minimumFret = #9 g-4 f e
 
     d c b \set TabStaff.minimumFret = #10 a-3 g f e

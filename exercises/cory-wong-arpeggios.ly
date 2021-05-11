@@ -15,8 +15,7 @@
         (place-fret 3 7 "1" inverted)
         (place-fret 2 8 "2")
         (place-fret 1 7 "1" inverted)
-        (place-fret 1 10 "4" inverted)
-      )
+        (place-fret 1 10 "4" inverted))
       \vspace #0.5
       "Major, root on string 6"
 
@@ -31,8 +30,7 @@
         (place-fret 3 7 "1" inverted)
         (place-fret 2 8 "2")
         (place-fret 1 6 "1" inverted)
-        (place-fret 1 10 "4" inverted)
-      )
+        (place-fret 1 10 "4" inverted))
       \vspace #0.5
       "Minor, root on string 6"
     }
@@ -49,8 +47,7 @@
         (place-fret 2 8 "1" inverted)
         (place-fret 2 13 "2")
         (place-fret 1 12 "1" inverted)
-        (place-fret 1 15 "4" inverted)
-      )
+        (place-fret 1 15 "4" inverted))
       \vspace #0.5
       "Major, root on string 5"
 
@@ -65,8 +62,7 @@
         (place-fret 2 8 "1" inverted)
         (place-fret 2 13 "2")
         (place-fret 1 11 "1" inverted)
-        (place-fret 1 15 "4" inverted)
-      )
+        (place-fret 1 15 "4" inverted))
       \vspace #0.5
       "Minor, root on string 5"
     }

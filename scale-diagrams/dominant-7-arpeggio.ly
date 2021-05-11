@@ -14,8 +14,7 @@
         (place-fret 3 15 "♭7" inverted)
         (place-fret 2 13 "1")
         (place-fret 1 12 "3" inverted)
-        (place-fret 1 15 "5" inverted)
-      )
+        (place-fret 1 15 "5" inverted))
       \vspace #0.5
       "Arpeggio"
 
@@ -35,8 +34,7 @@
         (place-fret 2 13 "1")
         (place-fret 2 15 "2" inverted bisque3)
         (place-fret 1 12 "3" inverted)
-        (place-fret 1 15 "5" inverted)
-      )
+        (place-fret 1 15 "5" inverted))
       \vspace #0.5
       "Major pentatonic, position 3"
     }

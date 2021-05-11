@@ -16,8 +16,7 @@
     (place-fret 4 6 "A♭" inverted)
     (place-fret 3 7 "D" inverted)
     (place-fret 2 5 "E♮" inverted)
-    (mute 1)
-  )
+    (mute 1))
 
 chord = \chordmode { b-flat:7.11+^5 }
 

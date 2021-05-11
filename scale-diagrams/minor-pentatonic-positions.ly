@@ -18,8 +18,7 @@
         (place-fret 2 5 "5" inverted)
         (place-fret 2 8 "♭7" inverted burlywood4)
         (place-fret 1 5 "1")
-        (place-fret 1 8 "♭3" inverted)
-      )
+        (place-fret 1 8 "♭3" inverted))
       \vspace #0.5
       "Position 1"
     }
@@ -37,8 +36,7 @@
         (place-fret 2 8 "♭7" inverted burlywood4)
         (place-fret 2 10 "1")
         (place-fret 1 8 "♭3" inverted)
-        (place-fret 1 10 "4" inverted burlywood4)
-      )
+        (place-fret 1 10 "4" inverted burlywood4))
       \vspace #0.5
       "Position 2"
     }
@@ -56,8 +54,7 @@
         (place-fret 2 10 "1")
         (place-fret 2 13 "♭3" inverted)
         (place-fret 1 10 "4" inverted burlywood4)
-        (place-fret 1 12 "5" inverted)
-      )
+        (place-fret 1 12 "5" inverted))
       \vspace #0.5
       "Position 3"
     }
@@ -75,8 +72,7 @@
         (place-fret 2 13 "♭3" inverted)
         (place-fret 2 15 "4" inverted burlywood4)
         (place-fret 1 12 "5" inverted)
-        (place-fret 1 15 "♭7" inverted burlywood4)
-      )
+        (place-fret 1 15 "♭7" inverted burlywood4))
       \vspace #0.5
       "Position 4"
     }
@@ -94,8 +90,7 @@
         (place-fret 2 15 "4" inverted burlywood4)
         (place-fret 2 17 "5" inverted)
         (place-fret 1 15 "♭7" inverted burlywood4)
-        (place-fret 1 17 "1")
-      )
+        (place-fret 1 17 "1"))
       \vspace #0.5
       "Position 5"
     }

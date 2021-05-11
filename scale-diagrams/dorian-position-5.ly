@@ -22,7 +22,6 @@
       (place-fret 2 15 "4" inverted burlywood4)
       (place-fret 1 12 "5" inverted)
       (place-fret 1 14 "6" inverted plum4)
-      (place-fret 1 15 "♭7" inverted burlywood4)
-    )
+      (place-fret 1 15 "♭7" inverted burlywood4))
   }
 }
