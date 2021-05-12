@@ -10,6 +10,7 @@
   scoreTitleMarkup = ##f
   oddHeaderMarkup = ##f
   oddFooterMarkup = ##f
+  evenHeaderMarkup = ##f
 }
 
 #(define-markup-command (fret-diagram-container layout props contents) (markup?)
