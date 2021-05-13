@@ -6,21 +6,21 @@
 }
 
 dorian-position-five = \markup {
-  \fret-diagram-verbose #'(
-    (place-fret 5 12 "D")
-    (place-fret 5 14 "E" inverted plum4)
-    (place-fret 5 15 "F" inverted)
-    (place-fret 4 12 "G" inverted burlywood4)
-    (place-fret 4 14 "A" inverted)
-    (place-fret 3 11 "B" inverted plum4)
-    (place-fret 3 12 "C" inverted burlywood4)
-    (place-fret 3 14 "D")
-    (place-fret 2 12 "E" inverted plum4)
-    (place-fret 2 13 "F" inverted)
-    (place-fret 2 15 "G" inverted burlywood4)
-    (place-fret 1 12 "A" inverted)
-    (place-fret 1 14 "B" inverted plum4)
-    (place-fret 1 15 "C" inverted burlywood4))
+  \fret-diagram-verbose #`(
+    (place-fret 5 12 "D" ,@fret-diagram-root-format)
+    (place-fret 5 14 "E" ,@fret-diagram-other-format)
+    (place-fret 5 15 "F" ,@fret-diagram-triad-format)
+    (place-fret 4 12 "G" ,@fret-diagram-pentatonic-format)
+    (place-fret 4 14 "A" ,@fret-diagram-triad-format)
+    (place-fret 3 11 "B" ,@fret-diagram-other-format)
+    (place-fret 3 12 "C" ,@fret-diagram-pentatonic-format)
+    (place-fret 3 14 "D" ,@fret-diagram-root-format)
+    (place-fret 2 12 "E" ,@fret-diagram-other-format)
+    (place-fret 2 13 "F" ,@fret-diagram-triad-format)
+    (place-fret 2 15 "G" ,@fret-diagram-pentatonic-format)
+    (place-fret 1 12 "A" ,@fret-diagram-triad-format)
+    (place-fret 1 14 "B" ,@fret-diagram-other-format)
+    (place-fret 1 15 "C" ,@fret-diagram-pentatonic-format))
 }
 
 fret-diagram-size = 2.5
@@ -42,22 +42,22 @@ music = {
 
     d-1^\markup { \combine
       \transparent \draw-line #'(0 . -6)
-      \override #`(size . ,fret-diagram-size) \fret-diagram-container \fret-diagram-verbose #'(
-        (place-fret 6 5 "D")
-        (place-fret 6 7 "E" inverted plum4)
-        (place-fret 6 8 "F" inverted)
-        (place-fret 5 5 "G" inverted burlywood4)
-        (place-fret 5 7 "A" inverted)
-        (place-fret 4 4 "B" inverted plum4)
-        (place-fret 4 5 "C" inverted burlywood4)
-        (place-fret 4 7 "D")
-        (place-fret 3 4 "E" inverted plum4)
-        (place-fret 3 5 "F" inverted)
-        (place-fret 3 7 "G" inverted burlywood4)
-        (place-fret 2 5 "A" inverted)
-        (place-fret 2 7 "B" inverted plum4)
-        (place-fret 2 8 "C" inverted burlywood4)
-        (place-fret 1 5 "D"))
+      \override #`(size . ,fret-diagram-size) \fret-diagram-container \fret-diagram-verbose #`(
+        (place-fret 6 5 "D" ,@fret-diagram-root-format)
+        (place-fret 6 7 "E" ,@fret-diagram-other-format)
+        (place-fret 6 8 "F" ,@fret-diagram-triad-format)
+        (place-fret 5 5 "G" ,@fret-diagram-pentatonic-format)
+        (place-fret 5 7 "A" ,@fret-diagram-triad-format)
+        (place-fret 4 4 "B" ,@fret-diagram-other-format)
+        (place-fret 4 5 "C" ,@fret-diagram-pentatonic-format)
+        (place-fret 4 7 "D" ,@fret-diagram-root-format)
+        (place-fret 3 4 "E" ,@fret-diagram-other-format)
+        (place-fret 3 5 "F" ,@fret-diagram-triad-format)
+        (place-fret 3 7 "G" ,@fret-diagram-pentatonic-format)
+        (place-fret 2 5 "A" ,@fret-diagram-triad-format)
+        (place-fret 2 7 "B" ,@fret-diagram-other-format)
+        (place-fret 2 8 "C" ,@fret-diagram-pentatonic-format)
+        (place-fret 1 5 "D" ,@fret-diagram-root-format))
     } c b a \set TabStaff.minimumFret = #9 g-4 f e
 
     d c b \set TabStaff.minimumFret = #10 a-3 g f e

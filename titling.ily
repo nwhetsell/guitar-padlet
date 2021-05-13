@@ -13,7 +13,21 @@
   evenHeaderMarkup = ##f
 }
 
-#(define-markup-command (fret-diagram-container layout props contents) (markup?)
+\pointAndClickOff
+
+override-FretBoard = {
+  \override FretBoard.size = 4
+  \override FretBoard.fret-diagram-details.dot-label-font-mag = 0.25
+  \override FretBoard.fret-diagram-details.dot-radius = 0.35
+  \override FretBoard.fret-diagram-details.finger-code = #'in-dot
+  \override FretBoard.fret-diagram-details.fret-label-font-mag = 0.25
+  \override FretBoard.fret-diagram-details.number-type = #'arabic
+  \override FretBoard.fret-diagram-details.xo-font-magnification = #(/ 1 6)
+}
+
+#(begin
+
+(define-markup-command (fret-diagram-container layout props contents) (markup?)
   #:properties ((size 4))
   (interpret-markup layout props
     #{
@@ -34,14 +48,14 @@
       }
     #}))
 
-override-FretBoard = {
-  \override FretBoard.size = 4
-  \override FretBoard.fret-diagram-details.dot-label-font-mag = 0.25
-  \override FretBoard.fret-diagram-details.dot-radius = 0.35
-  \override FretBoard.fret-diagram-details.finger-code = #'in-dot
-  \override FretBoard.fret-diagram-details.fret-label-font-mag = 0.25
-  \override FretBoard.fret-diagram-details.number-type = #'arabic
-  \override FretBoard.fret-diagram-details.xo-font-magnification = #(/ 1 6)
-}
+(define fret-diagram-root-format '())
+(define fret-diagram-triad-format '(inverted))
+(define fret-diagram-pentatonic-format '(inverted burlywood4))
+(define fret-diagram-other-format '(inverted plum4))
 
-\pointAndClickOff
+(define fret-diagram-light-root-format '(grey75))
+(define fret-diagram-light-triad-format '(inverted grey50))
+(define fret-diagram-light-pentatonic-format '(inverted bisque3))
+(define fret-diagram-light-other-format '(inverted thistle))
+
+)
