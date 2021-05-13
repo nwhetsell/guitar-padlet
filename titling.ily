@@ -48,14 +48,14 @@ override-FretBoard = {
       }
     #}))
 
-(define fret-diagram-root-format '())
-(define fret-diagram-triad-format '(inverted))
-(define fret-diagram-pentatonic-format '(inverted burlywood4))
-(define fret-diagram-other-format '(inverted plum4))
+(define fret-diagram-root-format '(red4))
+(define fret-diagram-triad-format '(indianred))
+(define fret-diagram-pentatonic-format '(inverted indianred))
+(define fret-diagram-other-format '(inverted grey40))
 
 (define fret-diagram-light-root-format '(grey75))
-(define fret-diagram-light-triad-format '(inverted grey50))
-(define fret-diagram-light-pentatonic-format '(inverted bisque3))
-(define fret-diagram-light-other-format '(inverted thistle))
+(define fret-diagram-light-triad-format '(grey75))
+(define fret-diagram-light-pentatonic-format '(inverted grey75))
+(define fret-diagram-light-other-format '(inverted grey75))
 
 )
