@@ -16,21 +16,26 @@ jobs:
 
     - name: Create PDFs
       run: |
-        lilypond chord-diagrams/b-flat-7-sharp-11.ly
-        lilypond chord-diagrams/e-half-diminished-7.ly
-        lilypond exercises/cory-wong-arpeggios.ly
-        lilypond exercises/descending-16ths.ly
-        lilypond exercises/Dm7-arpeggio.ly
-        lilypond exercises/dorian-shifting.ly
-        lilypond exercises/sequence-1.ly
-        lilypond exercises/shifting-gears.ly
-        lilypond exercises/spider.ly
-        lilypond scale-diagrams/albert-king-box.ly
-        lilypond scale-diagrams/blues-scale-shifts.ly
-        lilypond scale-diagrams/dominant-7-arpeggio.ly
-        lilypond scale-diagrams/dorian-position-5.ly
-        lilypond scale-diagrams/major-pentatonic-positions.ly
-        lilypond scale-diagrams/major-scale-modes-2-notes-on-string-3.ly
-        lilypond scale-diagrams/major-scale-modes-from-pentatonic-positions.ly
-        lilypond scale-diagrams/minor-pentatonic-positions.ly
-        lilypond scale-diagrams/phrygian-dominant.ly
+        cd chord-diagrams
+        lilypond b-flat-7-sharp-11.ly
+        lilypond e-half-diminished-7.ly
+        cd ../exercises
+        lilypond cory-wong-arpeggios.ly
+        lilypond descending-16ths.ly
+        lilypond Dm7-arpeggio.ly
+        lilypond dorian-shifting.ly
+        lilypond sequence-1.ly
+        lilypond shifting-gears.ly
+        lilypond spider.ly
+        cd ../scale-diagrams
+        lilypond albert-king-box.ly
+        lilypond b-b-king-box.ly
+        lilypond blues-scale-shifts.ly
+        lilypond dominant-7-arpeggio.ly
+        lilypond dorian-position-5.ly
+        lilypond harmonic-minor.ly
+        lilypond major-pentatonic-positions.ly
+        lilypond major-scale-modes-2-notes-on-string-3.ly
+        lilypond major-scale-modes-from-pentatonic-positions.ly
+        lilypond minor-pentatonic-positions.ly
+        lilypond phrygian-dominant.ly
