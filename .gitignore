@@ -1,5 +1,6 @@
 *.count
 *.eps
+*.midi
 *.pdf
 *.tex
 *.texi
