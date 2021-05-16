@@ -19,6 +19,8 @@ jobs:
         cd chord-diagrams
         lilypond b-flat-7-sharp-11.ly
         lilypond e-half-diminished-7.ly
+        cd ../excerpts
+        lilypond 'Do You Feel Like We Do.ly'
         cd ../exercises
         lilypond cory-wong-arpeggios.ly
         lilypond descending-16ths.ly
