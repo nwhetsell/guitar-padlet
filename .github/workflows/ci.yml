@@ -26,6 +26,7 @@ jobs:
         lilypond descending-16ths.ly
         lilypond Dm7-arpeggio.ly
         lilypond dorian-shifting.ly
+        lilypond ii-V-I-licks.ly
         lilypond sequence-1.ly
         lilypond shifting-gears.ly
         lilypond spider.ly
