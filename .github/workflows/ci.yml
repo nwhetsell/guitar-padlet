@@ -36,9 +36,9 @@ jobs:
         lilypond blues-scale-shifts.ly
         lilypond dominant-7-arpeggio.ly
         lilypond dorian-position-5.ly
-        lilypond harmonic-minor.ly
         lilypond major-pentatonic-positions.ly
         lilypond major-scale-modes-2-notes-on-string-3.ly
         lilypond major-scale-modes-from-pentatonic-positions.ly
         lilypond minor-pentatonic-positions.ly
+        lilypond minor-scales.ly
         lilypond phrygian-dominant.ly
