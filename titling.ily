@@ -28,20 +28,26 @@ override-FretBoard = {
 #(begin
 
 (define-markup-command (fret-diagram-container layout props contents) (markup?)
-  #:properties ((size 4))
+  #:properties (
+    (fret-count 4)
+    (fret-distance 1.5)
+    (orientation 'landscape)
+    (size 4))
   (interpret-markup layout props
     #{
       \markup {
         \override #'(align-dir . -1)
         \override #`(size . ,size)
-        \override #'(fret-diagram-details . (
+        \override #`(fret-diagram-details . (
           (dot-label-font-mag . 0.25)
           (dot-radius . 0.35)
           (finger-code . in-dot)
-          (fret-distance . 1.5)
+          (fret-count . ,fret-count)
+          (fret-distance . ,fret-distance)
           (fret-label-custom-format . "")
           (number-type . custom)
-          (orientation . landscape)
+          (orientation . ,orientation)
+          (xo-font-magnification . ,(/ 1 6))
         )) {
           #contents
         }
