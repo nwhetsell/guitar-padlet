@@ -18,8 +18,10 @@ jobs:
       run: |
         cd chord-diagrams
         lilypond 7th-chords.ly
+        lilypond 13th-and-9th.ly
         lilypond b-flat-7-sharp-11.ly
         lilypond e-half-diminished-7.ly
+        lilypond ii-V-I-chords.ly
         cd ../excerpts
         lilypond 'Do You Feel Like We Do.ly'
         cd ../exercises
