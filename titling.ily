@@ -1,7 +1,6 @@
 \version "2.22.0"
 
 \paper {
-  indent = 0
   top-margin = 0
   left-margin = 0
   right-margin = 0
@@ -11,6 +10,10 @@
   oddHeaderMarkup = ##f
   oddFooterMarkup = ##f
   evenHeaderMarkup = ##f
+}
+
+\layout {
+  indent = 0
 }
 
 \pointAndClickOff
