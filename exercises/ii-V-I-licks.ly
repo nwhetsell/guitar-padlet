@@ -14,8 +14,6 @@
   \context {
     \Voice
     \consists "Horizontal_bracket_engraver"
-    % \override HorizontalBracket.thickness = #0
-    % \override HorizontalBracket.Y-offset = #-3.75
   }
 }
 
