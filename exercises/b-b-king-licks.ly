@@ -184,7 +184,10 @@ music = {
   \set TabStaff.restrainOpenStrings = ##t
   \set TabStaff.minimumFret = #10
   \partial 2. { r4. r4 \ottava #1 a'32 b d16-. } |
-  e4.\startBend \bent-grace { f-sharp16\stopBend } b,4. \tuplet 4/6 { e16( d-sharp!) e( d-sharp) } \grace e16\glissando f-sharp8-. d8.\startBend \bent-grace { d-sharp16\stopBend } b32 a |
+  e4.\startBend \bent-grace { f-sharp16\stopBend } b,4.
+  % e16.[( d-sharp32)~32 r e16~32( d-sharp16) r32]
+  \tuplet 4/6 { e16( d-sharp!) e( d-sharp) }
+  \grace e16\glissando f-sharp8-. d8.\startBend \bent-grace { d-sharp16\stopBend } b32 a |
   b4. d4\startBend \bent-grace { d-sharp16\stopBend } \tuplet 3/2 { b16 a f-sharp } \ottava #0 r2. |
 }
 
