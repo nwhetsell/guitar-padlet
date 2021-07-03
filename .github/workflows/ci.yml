@@ -8,7 +8,8 @@ jobs:
     steps:
     - name: Check out repository
       uses: actions/checkout@v2
-      submodules: recursive
+      with:
+        submodules: recursive
 
     - name: Install LilyPond
       run: |
