@@ -217,7 +217,7 @@ music = {
 \score {
   <<
     \new Staff \with {
-      instrumentName = \markup { \bold "7 " }
+      instrumentName = \markup { \bold "8 " }
     } \relative {
       \clef "treble_8"
       \music
