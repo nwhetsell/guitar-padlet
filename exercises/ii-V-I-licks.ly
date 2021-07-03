@@ -10,7 +10,6 @@
 }
 
 \layout {
-  indent = 0
   \context {
     \Voice
     \consists "Horizontal_bracket_engraver"
