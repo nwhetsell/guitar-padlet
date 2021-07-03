@@ -14,6 +14,16 @@
 
 \layout {
   indent = 0
+
+  \context {
+    \Score
+
+    % Based on
+    % https://lilypond.org/doc/Documentation/snippets/fretted-strings#fretted-strings-slides-in-tablature
+    \override Glissando.minimum-length = #3
+    \override Glissando.springs-and-rods = #ly:spanner::set-spacing-rods
+    \override Glissando.thickness = #2
+  }
 }
 
 \pointAndClickOff
