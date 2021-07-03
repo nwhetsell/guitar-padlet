@@ -206,7 +206,7 @@ music = {
 
 % 8
 music = {
-  \key b \minor
+  \key b \major
   \time 12/8
   \set TabStaff.restrainOpenStrings = ##t
   \set TabStaff.minimumFret = #6
