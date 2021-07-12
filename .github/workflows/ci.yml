@@ -18,34 +18,8 @@ jobs:
 
     - name: Create PDFs
       run: |
-        cd chord-diagrams
-        lilypond 7th-chords.ly
-        lilypond 13th-and-9th.ly
-        lilypond b-flat-7-sharp-11.ly
-        lilypond e-half-diminished-7.ly
-        lilypond ii-V-I-chords.ly
-        cd ../excerpts
-        lilypond 'Do You Feel Like We Do.ly'
-        cd ../exercises
-        lilypond 4th-rolls.ly
-        lilypond b-b-king-licks.ly
-        lilypond cory-wong-arpeggios.ly
-        lilypond descending-16ths.ly
-        lilypond Dm7-arpeggio.ly
-        lilypond dorian-shifting.ly
-        lilypond ii-V-I-licks.ly
-        lilypond sequence-1.ly
-        lilypond shifting-gears.ly
-        lilypond spider.ly
-        cd ../scale-diagrams
-        lilypond albert-king-box.ly
-        lilypond b-b-king-box.ly
-        lilypond blues-scale-shifts.ly
-        lilypond dominant-7-arpeggio.ly
-        lilypond dorian-position-5.ly
-        lilypond major-pentatonic-positions.ly
-        lilypond major-scale-modes-2-notes-on-string-3.ly
-        lilypond major-scale-modes-from-pentatonic-positions.ly
-        lilypond minor-pentatonic-positions.ly
-        lilypond minor-scales.ly
-        lilypond phrygian-dominant.ly
+        for folder in chord-diagrams excerpts exercises scale-diagrams; do
+          cd $folder
+          find . -name '*.ly' -exec lilypond {} \;
+          cd ..
+        done
