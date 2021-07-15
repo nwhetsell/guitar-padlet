@@ -76,7 +76,7 @@ music = {
   \time 12/8
   \set TabStaff.restrainOpenStrings = ##t
   \set TabStaff.minimumFret = #9
-  r4 g-sharp'16 b \grace d\glissando d-sharp b f-sharp f e r \set TabStaff.minimumFret = #7 \grace d\glissando d-sharp \grace d\glissando d-sharp b4~4 r8 |
+  r4 g-sharp'16 b \grace d\glissando d-sharp b f-sharp f e8-. \set TabStaff.minimumFret = #7 \grace d16\glissando d-sharp \grace d\glissando d-sharp b4~4 r8 |
 }
 
 \score {
@@ -103,7 +103,7 @@ music = {
   \set TabStaff.minimumFret = #12
   \ottava #1
   b''4\bendAfter #-8 r8
-  f-sharp4.\startBend \bent-grace { a4\stopBend c-sharp,\preBend\startBend }
+  r8 f-sharp4\startBend \bent-grace { a4\stopBend c-sharp,\preBend\startBend }
   d-sharp16\stopBend\startBend \bent-grace c-sharp16\stopBend b32 g-sharp b8. g-sharp16
   c-sharp8\startBend[ \bent-grace { d16\stopBend } e32 f-sharp r16 \bent-grace c-sharp16\preBend\startBend d-sharp16\stopBend\startBend \bent-grace c-sharp16\stopBend b32 g-sharp] |
   d'32( b16.~) 8 c-sharp16 \ottava #0 r16
@@ -131,7 +131,7 @@ music = {
   \time 12/8
   \set TabStaff.restrainOpenStrings = ##t
   \set TabStaff.minimumFret = #6
-  \partial 2. { r8. f-sharp16 g-sharp b d[( d-sharp) f-sharp-. r g-sharp8] } |
+  \partial 2. { r8. f-sharp16 g-sharp b d( d-sharp) f-sharp8-. g-sharp } |
   g-sharp4\startBend \bent-grace { a4\stopBend\startBend g-sharp\stopBend } f-sharp16 g-sharp \acciaccatura d d-sharp b~8 \tuplet 3/2 { a16 f-sharp f } e16 d-sharp~4 r4. |
 }
 
@@ -186,9 +186,9 @@ music = {
   \partial 2. { r4. r4 \ottava #1 a'32 b d16-. } |
   e4.\startBend \bent-grace { f-sharp16\stopBend } b,4.
   % e16.[( d-sharp32)~32 r e16~32( d-sharp16) r32]
-  \tuplet 4/6 { e16( d-sharp!) e( d-sharp) }
-  \grace e16\glissando f-sharp8-. d8.\startBend \bent-grace { d-sharp16\stopBend } b32 a |
-  b4. d4\startBend \bent-grace { d-sharp16\stopBend } \tuplet 3/2 { b16 a f-sharp } \ottava #0 r2. |
+  \tuplet 4/6 { e16 d-sharp! e d-sharp }
+  \grace e16\glissando f-sharp8-. d8.\startBend \bent-grace { d-sharp16\stopBend } b32( a) |
+  b4. d4\startBend \bent-grace { d-sharp16\stopBend } \tuplet 3/2 { b16( a) f-sharp } \ottava #0 r2. |
 }
 
 \score {
@@ -213,7 +213,7 @@ music = {
   \time 12/8
   \set TabStaff.restrainOpenStrings = ##t
   \set TabStaff.minimumFret = #6
-  \partial 2. { r4. \acciaccatura d'16 d-sharp f-sharp b f-sharp \grace d\glissando d-sharp r } |
+  \partial 2. { r4. \acciaccatura d'16 d-sharp f-sharp b f-sharp \grace d\glissando d-sharp8-. } |
   b4. r8 \tuplet 3/2 { f-sharp16 g-sharp b } \grace d16\glissando d-sharp16. b32 f-sharp4. r |
 }
 
