@@ -104,8 +104,8 @@ music = {
   \ottava #1
   b''4\bendAfter #-8 r8
   r8 f-sharp4\startBend \bent-grace { a4\stopBend c-sharp,\preBend\startBend }
-  d-sharp16\stopBend\startBend \bent-grace c-sharp16\stopBend b32 g-sharp b8. g-sharp16
-  c-sharp8\startBend[ \bent-grace { d16\stopBend } e32 f-sharp r16 \bent-grace c-sharp16\preBend\startBend d-sharp16\stopBend\startBend \bent-grace c-sharp16\stopBend b32 g-sharp] |
+  d-sharp32\stopBend\startBend c-sharp\stopBend b g-sharp b8. g-sharp16
+  c-sharp8\startBend[ \bent-grace { d16\stopBend } e32 f-sharp r16 \bent-grace c-sharp16\preBend\startBend d-sharp32\stopBend\startBend c-sharp\stopBend b g-sharp] |
   d'32( b16.~) 8 c-sharp16 \ottava #0 r16
 }
 
@@ -132,7 +132,7 @@ music = {
   \set TabStaff.restrainOpenStrings = ##t
   \set TabStaff.minimumFret = #6
   \partial 2. { r8. f-sharp16 g-sharp b d( d-sharp) f-sharp8-. g-sharp } |
-  g-sharp4\startBend \bent-grace { a4\stopBend\startBend g-sharp\stopBend } f-sharp16 g-sharp \acciaccatura d d-sharp b~8 \tuplet 3/2 { a16 f-sharp f } e16 d-sharp~4 r4. |
+  g-sharp8\startBend a16\stopBend\startBend g-sharp\stopBend f-sharp g-sharp \acciaccatura d d-sharp b~8 \tuplet 3/2 { a16 f-sharp f } e16 d-sharp~4 r4. |
 }
 
 \score {
