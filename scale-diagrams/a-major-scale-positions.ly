@@ -3,6 +3,26 @@
 \include "../titling.ily"
 #(ly:set-option 'backend 'eps)
 
+% We want to place dots between frets 2 and 3; 4 and 5; 6 and 7; 8 and 9; 11 and
+% 12; and 14 and 15. The x-coordinate of a dot placed between fret-number and
+% fret-number + 1 is:
+%   x = size * fret-distance * 0.5 * (fret-number + fret-number + 1)
+%     = size * fret-distance * (fret-number - 0.5)
+% We also need to account for the thickness of the top fret:
+%   size * thickness * 0.5 * 0.1
+% The value of thickness appears to be 0.5 by default. To draw a dot using the
+% PostScript arc operator (see page 530 of
+% https://www.adobe.com/jp/print/postscript/pdfs/PLRM.pdf), it’s also necessary
+% to shift the dot by its radius. As an example, the x-coordinate of a unit-
+% radius dot between frets 2 and 3 is:
+%   x + radius + thickness = size * fret-distance * (fret-number - 0.5)
+%                            + size * thickness * 0.5 * 0.1
+%                            + 1
+%                          = 4 * 1.5 * (2 - 0.5)
+%                            + 4 * 0.5 * 0.5 * 0.1
+%                            + 1
+%                          = 15 + 0.1 + 1
+%                          = 16.1
 fret-markers-markup = \markup {
   \postscript #"
     16.1 5 1 0 360 arc closepath
