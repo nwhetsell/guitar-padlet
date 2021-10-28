@@ -15,7 +15,7 @@
 % https://www.adobe.com/jp/print/postscript/pdfs/PLRM.pdf), it’s also necessary
 % to shift the dot by its radius. As an example, the x-coordinate of a unit-
 % radius dot between frets 2 and 3 is:
-%   x + radius + thickness = size * fret-distance * (fret-number - 0.5)
+%   x + thickness + radius = size * fret-distance * (fret-number - 0.5)
 %                            + size * thickness * 0.5 * 0.1
 %                            + 1
 %                          = 4 * 1.5 * (2 - 0.5)
