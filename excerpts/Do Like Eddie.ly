@@ -32,12 +32,12 @@ music = {
   r2 r16 b-flat8 d-flat16( d) f g8 |
   a-flat4~16 g8 f16~16 b-flat, r8 r8. f'16~ |
   f16 b-flat,8 a-flat16 b-flat a-flat b-flat d-flat\startBend d8\stopBend r8 r4 |
-  \tuplet 3/2 { a-flat'8 b-flat g } a-flat g16 f~16 \grace g-flat8\glissando g8.~16 f e-flat \grace d-flat8\glissando d16~ |
+  \tuplet 3/2 { a-flat'8 b-flat g } a-flat g16 f~16 \grace f-sharp8\glissando g8.~16 f e-flat \grace d-flat8\glissando d16~ |
   d16 b-flat8 b-flat16~16 b-flat8.\bendAfter #-8 r2 |
-  \grace g'8\glissando a-flat4 \grace g-flat8\glissando g8. f16~16 b-flat,8. r4 |
+  \grace g'8\glissando a-flat4 \grace f-sharp8\glissando g8. f16~16 b-flat,8. r4 |
   a-flat'8 b-flat16 g~16 a-flat8 f16~16 b-flat,8 f'16~16 16 g8~ |
-  g16 f8 e-flat16 16 16( c) b-flat e-flat( c) g'16 f~\startBend 16 g-flat\stopBend e-flat a-flat |
-  f16( e-flat) c( b-flat) d-flat( d) a-flat b-flat~4 r |
+  g16 f8 e-flat16 16 16( c) b-flat e-flat( c) g'16 f~\startBend 16 f-sharp\stopBend e-flat a-flat |
+  f16 e-flat( c) b-flat d-flat( d) a-flat b-flat~4 r |
 }
 
 \score {
