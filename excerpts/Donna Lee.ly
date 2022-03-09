@@ -101,35 +101,35 @@ measures-twenty-seven-to-thirty-one = \relative {
 \score {
   <<
     \chords {
-      a-flat1 |
+      a-flat1:maj7 |
       g-flat2:7 f |
       b-flat1:7 |
       s1 |
       b-flat1:7 |
       e-flat1 |
-      a-flat1 |
+      a-flat1:maj7 |
       g-flat2:7 a-flat:7 |
-      d-flat1 |
+      d-flat1:maj7 |
       s1 |
-      a-flat1 |
+      a-flat1:maj7 |
       f1:7 |
       b-flat2:7 b-flat2:dim |
       s1 |
       b-flat1:7 |
       e-flat1 |
 
-      a-flat1 |
+      a-flat1:maj7 |
       g-flat2:7 f |
       b-flat1:7 |
       s1 |
-      g1:m |
-      c:1 |
+      g1:m7.5- |
+      c1:7 |
       f1:m |
       s1 |
       f2 d:m |
       g2:6 d:m |
       e-flat2 d:m |
-      g1:7 |
+      b1:dim7 |
       c2:m7 f:7 |
       b-flat2:m7 e-flat:7 |
       a-flat4
