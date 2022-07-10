@@ -22,6 +22,6 @@ jobs:
           cd $folder
           find . -name '*.ly' -exec lilypond {} \;
           find . -name '*.cropped.pdf' -exec sh -c 'mv -f "$1" $(basename "$1" .cropped.pdf).pdf' sh {} \;
-          rm *.png
+          rm -f *.png
           cd ..
         done
