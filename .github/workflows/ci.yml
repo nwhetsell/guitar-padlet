@@ -13,13 +13,15 @@ jobs:
 
     - name: Install LilyPond
       run: |
-        wget --no-verbose https://lilypond.org/download/binaries/linux-64/lilypond-2.22.2-1.linux-64.sh
-        sudo sh lilypond-2.22.2-1.linux-64.sh --batch
+        brew install nwhetsell/lilypond/lilypond-unstable
+        brew link lilypond-unstable
 
     - name: Create PDFs
       run: |
         for folder in chord-diagrams excerpts exercises scale-diagrams; do
           cd $folder
           find . -name '*.ly' -exec lilypond {} \;
+          find . -name '*.cropped.pdf' -exec sh -c 'mv -f "$1" $(basename "$1" .cropped.pdf).pdf' sh {} \;
+          rm *.png
           cd ..
         done

@@ -1,7 +1,7 @@
 \version "2.22.0"
 
 \include "../titling.ily"
-#(ly:set-option 'backend 'eps)
+#(ly:set-option 'crop #t)
 
 % We want to place dots between frets 2 and 3; 4 and 5; 6 and 7; 8 and 9; 11 and
 % 12; and 14 and 15. The x-coordinate of a dot placed between fret-number and

@@ -1,4 +1,4 @@
-\version "2.22.0"
+\version "2.23.0"
 
 \header {
   title = "Do You Feel Like We Do"
@@ -18,8 +18,8 @@ music = {
   \key c \major
   \time 4/4
 
+  \set Score.barNumberVisibility = #all-bar-numbers-visible
   \set Score.currentBarNumber = #9
-  \bar "" % Show the first bar number.
 
   \set TabStaff.restrainOpenStrings = ##t
 

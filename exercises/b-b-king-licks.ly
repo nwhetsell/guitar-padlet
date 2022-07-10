@@ -1,7 +1,8 @@
-\version "2.22.0"
+\version "2.23.0"
 
-\include "../lilypond-bend-spanner/bending.ily"
+stopBend = {}
 \include "../lilypond-bending-additions/bending-additions.ily"
+
 \include "../titling.ily"
 \paper {
   #(set-paper-size "letter")
@@ -21,8 +22,8 @@ music = {
   \set TabStaff.minimumFret = #7
   \partial 2. { r4 b8-. \acciaccatura d16 d-sharp8 f-sharp g-sharp-. } |
   \set TabStaff.minimumFret = #12
-  b4. c-sharp8.\startBend \bent-grace { d-sharp16\stopBend } b16 c-sharp g-sharp f-sharp'32 b,4 r16. c-sharp4.\startBend |
-  d4.\stopBend
+  b4. c-sharp8. \^ \bent-grace { d-sharp16 } b16 c-sharp g-sharp f-sharp'32 b,4 r16. c-sharp4. \^ |
+  d4.
 }
 
 \score {
@@ -48,10 +49,10 @@ music = {
   \set TabStaff.restrainOpenStrings = ##t
   \partial 4.*3 {
     r4 \set TabStaff.minimumFret = #11 \ottava #1 \grace f-sharp'16\glissando \set TabStaff.minimumFret = #12 g-sharp b
-    \bent-grace c-sharp16\preBend\startBend d-sharp\stopBend\startBend c-sharp64\stopBend( b32.) b8. g-sharp16
-    c-sharp8\startBend \bent-grace { d-sharp16\stopBend } e16 f-sharp c-sharp\startBend \bent-grace { d-sharp16\stopBend } c-sharp
+    \bent-grace c-sharp16\preBend \^ d-sharp \^ c-sharp64( b32.) b8. g-sharp16
+    c-sharp8 \^ \bent-grace { d-sharp16 } e16 f-sharp c-sharp \^ \bent-grace { d-sharp16 } c-sharp
   } |
-  b4 r16 g-sharp c-sharp8\startBend \bent-grace { d-sharp16\stopBend\startBend } c-sharp4\stopBend\startBend~4.~ \afterGrace c-sharp8 { \afterGrace-stopBend d-sharp16 } \ottava #0 r8 r |
+  b4 r16 g-sharp c-sharp8 \^ \bent-grace { d-sharp16 \^ } c-sharp4 \^~4.~ \afterGrace c-sharp8 { \afterGrace-stopBend d-sharp16 } \ottava #0 r8 r |
 }
 
 \score {
@@ -103,9 +104,9 @@ music = {
   \set TabStaff.minimumFret = #12
   \ottava #1
   b''4\bendAfter #-8 r8
-  r8 f-sharp4\startBend \bent-grace { a4\stopBend c-sharp,\preBend\startBend }
-  d-sharp32\stopBend\startBend c-sharp\stopBend b g-sharp b8. g-sharp16
-  c-sharp8\startBend[ \bent-grace { d16\stopBend } e32 f-sharp r16 \bent-grace c-sharp16\preBend\startBend d-sharp32\stopBend\startBend c-sharp\stopBend b g-sharp] |
+  r8 f-sharp4 \^ \bent-grace { a4 c-sharp,\preBend \^ }
+  d-sharp32 \^ c-sharp b g-sharp b8. g-sharp16
+  c-sharp8 \^[ \bent-grace { d16 } e32 f-sharp r16 \bent-grace c-sharp16\preBend \^ d-sharp32 \^ c-sharp b g-sharp] |
   d'32( b16.~) 8 c-sharp16 \ottava #0 r16
 }
 
@@ -132,7 +133,7 @@ music = {
   \set TabStaff.restrainOpenStrings = ##t
   \set TabStaff.minimumFret = #6
   \partial 2. { r8. f-sharp16 g-sharp b d( d-sharp) f-sharp8-. g-sharp } |
-  g-sharp8\startBend a16\stopBend\startBend g-sharp\stopBend f-sharp g-sharp \acciaccatura d d-sharp b~8 \tuplet 3/2 { a16 f-sharp f } e16 d-sharp~4 r4. |
+  g-sharp8 \^ a16 \^ g-sharp f-sharp g-sharp \acciaccatura d d-sharp b~8 \tuplet 3/2 { a16 f-sharp f } e16 d-sharp~4 r4. |
 }
 
 \score {
@@ -158,7 +159,7 @@ music = {
   \set TabStaff.restrainOpenStrings = ##t
   \set TabStaff.minimumFret = #7
   \partial 2. { r4. r8 \ottava #1 f-sharp'16 g-sharp b8-. } |
-  c-sharp4\startBend \bent-grace { d-sharp16\stopBend } c-sharp8-. c-sharp\startBend \bent-grace { d-sharp16\stopBend } c-sharp8-. c-sharp\startBend \bent-grace { d-sharp16\stopBend } c-sharp16 f-sharp, f-sharp4~8. \ottava #0 r16 r8 |
+  c-sharp4 \^ \bent-grace { d-sharp16 } c-sharp8-. c-sharp \^ \bent-grace { d-sharp16 } c-sharp8-. c-sharp \^ \bent-grace { d-sharp16 } c-sharp16 f-sharp, f-sharp4~8. \ottava #0 r16 r8 |
 }
 
 \score {
@@ -184,11 +185,11 @@ music = {
   \set TabStaff.restrainOpenStrings = ##t
   \set TabStaff.minimumFret = #10
   \partial 2. { r4. r4 \ottava #1 a'32 b d16-. } |
-  e4.\startBend \bent-grace { f-sharp16\stopBend } b,4.
+  e4. \^ \bent-grace { f-sharp16 } b,4.
   % e16.[( d-sharp32)~32 r e16~32( d-sharp16) r32]
   \tuplet 4/6 { e16 d-sharp! e d-sharp }
-  \grace e16\glissando f-sharp8-. d8.\startBend \bent-grace { d-sharp16\stopBend } b32( a) |
-  b4. d4\startBend \bent-grace { d-sharp16\stopBend } \tuplet 3/2 { b16( a) f-sharp } \ottava #0 r2. |
+  \grace e16\glissando f-sharp8-. d8. \^ \bent-grace { d-sharp16 } b32( a) |
+  b4. d4 \^ \bent-grace { d-sharp16 } \tuplet 3/2 { b16( a) f-sharp } \ottava #0 r2. |
 }
 
 \score {

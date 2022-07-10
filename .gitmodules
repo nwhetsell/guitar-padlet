@@ -1,6 +1,3 @@
-[submodule "lilypond-bend-spanner"]
-	path = lilypond-bend-spanner
-	url = https://github.com/nwhetsell/lilypond-bend-spanner.git
 [submodule "lilypond-bending-additions"]
 	path = lilypond-bending-additions
 	url = https://github.com/nwhetsell/lilypond-bending-additions.git

@@ -1,7 +1,7 @@
 \version "2.22.0"
 
 \include "../titling.ily"
-#(ly:set-option 'backend 'eps)
+#(ly:set-option 'crop #t)
 
 \markup {
   \fret-diagram-container {
