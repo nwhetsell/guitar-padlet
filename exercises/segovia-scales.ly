@@ -24,24 +24,6 @@ music = \relative {
 
 fret-diagram-size = 2.5
 
-scale-fret-diagram = \markup {
-  \fret-diagram-verbose #`(
-    (place-fret 5 3 "C" ,@fret-diagram-root-format)
-    (place-fret 5 5 "D" ,@fret-diagram-pentatonic-format)
-    (place-fret 4 2 "E" ,@fret-diagram-triad-format)
-    (place-fret 4 3 "F" ,@fret-diagram-other-format)
-    (place-fret 4 5 "G" ,@fret-diagram-triad-format)
-    (place-fret 3 2 "A" ,@fret-diagram-pentatonic-format)
-    (place-fret 3 4 "B" ,@fret-diagram-other-format)
-    (place-fret 3 5 "C" ,@fret-diagram-root-format)
-    (place-fret 3 7 "D" ,@fret-diagram-pentatonic-format)
-    (place-fret 2 5 "E" ,@fret-diagram-triad-format)
-    (place-fret 2 6 "F" ,@fret-diagram-other-format)
-    (place-fret 2 8 "G" ,@fret-diagram-triad-format)
-    (place-fret 1 5 "A" ,@fret-diagram-pentatonic-format)
-    (place-fret 1 7 "B" ,@fret-diagram-other-format)
-    (place-fret 1 8 "C" ,@fret-diagram-root-format))
-}
 \score {
   <<
     \new Staff {
@@ -50,8 +32,34 @@ scale-fret-diagram = \markup {
         \music
         {
           s4^\markup { \combine
-            \transparent \draw-line #'(0 . -8.5)
-            \override #`(size . ,fret-diagram-size) \fret-diagram-container \scale-fret-diagram
+            % x-coordinate = size * fret-distance * (fret-number - 0.5) + 0.16
+            %              = 2.5 * 1.5 * (fret-number − 0.5) + 0.16
+            \postscript #"
+              5.785 1.24 0.8 0 360 arc closepath
+              13.285 1.24 0.8 0 360 arc closepath
+              20.785 1.24 0.8 0 360 arc closepath
+              28.285 1.24 0.8 0 360 arc closepath
+              0.85 setgray fill
+            "
+            \override #`(size . ,fret-diagram-size)
+            \fret-diagram-container {
+              \fret-diagram-verbose #`(
+                (place-fret 5 3 "C" ,@fret-diagram-root-format)
+                (place-fret 5 5 "D" ,@fret-diagram-pentatonic-format)
+                (place-fret 4 2 "E" ,@fret-diagram-triad-format)
+                (place-fret 4 3 "F" ,@fret-diagram-other-format)
+                (place-fret 4 5 "G" ,@fret-diagram-triad-format)
+                (place-fret 3 2 "A" ,@fret-diagram-pentatonic-format)
+                (place-fret 3 4 "B" ,@fret-diagram-other-format)
+                (place-fret 3 5 "C" ,@fret-diagram-root-format)
+                (place-fret 3 7 "D" ,@fret-diagram-pentatonic-format)
+                (place-fret 2 5 "E" ,@fret-diagram-triad-format)
+                (place-fret 2 6 "F" ,@fret-diagram-other-format)
+                (place-fret 2 8 "G" ,@fret-diagram-triad-format)
+                (place-fret 1 5 "A" ,@fret-diagram-pentatonic-format)
+                (place-fret 1 7 "B" ,@fret-diagram-other-format)
+                (place-fret 1 8 "C" ,@fret-diagram-root-format))
+            }
           }
         }
       >>
@@ -74,24 +82,6 @@ scale-fret-diagram = \markup {
 
 \markup { \vspace #1 }
 
-scale-fret-diagram = \markup {
-  \fret-diagram-verbose #`(
-    (place-fret 5 3 "D♭" ,@fret-diagram-root-format)
-    (place-fret 5 5 "E♭" ,@fret-diagram-pentatonic-format)
-    (place-fret 4 2 "F"  ,@fret-diagram-triad-format)
-    (place-fret 4 3 "G♭" ,@fret-diagram-other-format)
-    (place-fret 4 5 "A♭" ,@fret-diagram-triad-format)
-    (place-fret 3 2 "B♭" ,@fret-diagram-pentatonic-format)
-    (place-fret 3 4 "C"  ,@fret-diagram-other-format)
-    (place-fret 3 5 "D♭" ,@fret-diagram-root-format)
-    (place-fret 3 7 "E♭" ,@fret-diagram-pentatonic-format)
-    (place-fret 2 5 "F"  ,@fret-diagram-triad-format)
-    (place-fret 2 6 "G♭" ,@fret-diagram-other-format)
-    (place-fret 2 8 "A♭" ,@fret-diagram-triad-format)
-    (place-fret 1 5 "B♭" ,@fret-diagram-pentatonic-format)
-    (place-fret 1 7 "C"  ,@fret-diagram-other-format)
-    (place-fret 1 8 "D♭" ,@fret-diagram-root-format))
-}
 \score {
   <<
     \new Staff {
@@ -100,8 +90,32 @@ scale-fret-diagram = \markup {
         { \transpose c d-flat { \music } }
         {
           s4^\markup { \combine
-            \transparent \draw-line #'(0 . -8.5)
-            \override #`(size . ,fret-diagram-size) \fret-diagram-container \scale-fret-diagram
+            \postscript #"
+              2.035 1.24 0.8 0 360 arc closepath
+              9.535 1.24 0.8 0 360 arc closepath
+              17.035 1.24 0.8 0 360 arc closepath
+              24.535 1.24 0.8 0 360 arc closepath
+              0.85 setgray fill
+            "
+            \override #`(size . ,fret-diagram-size)
+            \fret-diagram-container {
+              \fret-diagram-verbose #`(
+                (place-fret 5 3 "D♭" ,@fret-diagram-root-format)
+                (place-fret 5 5 "E♭" ,@fret-diagram-pentatonic-format)
+                (place-fret 4 2 "F"  ,@fret-diagram-triad-format)
+                (place-fret 4 3 "G♭" ,@fret-diagram-other-format)
+                (place-fret 4 5 "A♭" ,@fret-diagram-triad-format)
+                (place-fret 3 2 "B♭" ,@fret-diagram-pentatonic-format)
+                (place-fret 3 4 "C"  ,@fret-diagram-other-format)
+                (place-fret 3 5 "D♭" ,@fret-diagram-root-format)
+                (place-fret 3 7 "E♭" ,@fret-diagram-pentatonic-format)
+                (place-fret 2 5 "F"  ,@fret-diagram-triad-format)
+                (place-fret 2 6 "G♭" ,@fret-diagram-other-format)
+                (place-fret 2 8 "A♭" ,@fret-diagram-triad-format)
+                (place-fret 1 5 "B♭" ,@fret-diagram-pentatonic-format)
+                (place-fret 1 7 "C"  ,@fret-diagram-other-format)
+                (place-fret 1 8 "D♭" ,@fret-diagram-root-format))
+            }
           }
         }
       >>
@@ -124,24 +138,6 @@ scale-fret-diagram = \markup {
 
 \markup { \vspace #1 }
 
-scale-fret-diagram = \markup {
-  \fret-diagram-verbose #`(
-    (place-fret 5 3 "D"  ,@fret-diagram-root-format)
-    (place-fret 5 5 "E"  ,@fret-diagram-pentatonic-format)
-    (place-fret 4 2 "F♯" ,@fret-diagram-triad-format)
-    (place-fret 4 3 "G"  ,@fret-diagram-other-format)
-    (place-fret 4 5 "A"  ,@fret-diagram-triad-format)
-    (place-fret 3 2 "B"  ,@fret-diagram-pentatonic-format)
-    (place-fret 3 4 "C♯" ,@fret-diagram-other-format)
-    (place-fret 3 5 "D"  ,@fret-diagram-root-format)
-    (place-fret 3 7 "E"  ,@fret-diagram-pentatonic-format)
-    (place-fret 2 5 "F♯" ,@fret-diagram-triad-format)
-    (place-fret 2 6 "G"  ,@fret-diagram-other-format)
-    (place-fret 2 8 "A"  ,@fret-diagram-triad-format)
-    (place-fret 1 5 "B"  ,@fret-diagram-pentatonic-format)
-    (place-fret 1 7 "C♯" ,@fret-diagram-other-format)
-    (place-fret 1 8 "D"  ,@fret-diagram-root-format))
-}
 \score {
   <<
     \new Staff {
@@ -150,8 +146,31 @@ scale-fret-diagram = \markup {
         { \transpose c d { \music } }
         {
           s4^\markup { \combine
-            \transparent \draw-line #'(0 . -8.5)
-            \override #`(size . ,fret-diagram-size) \fret-diagram-container \scale-fret-diagram
+            \postscript #"
+              5.785 1.24 0.8 0 360 arc closepath
+              13.285 1.24 0.8 0 360 arc closepath
+              20.785 1.24 0.8 0 360 arc closepath
+              0.85 setgray fill
+            "
+            \override #`(size . ,fret-diagram-size)
+            \fret-diagram-container {
+              \fret-diagram-verbose #`(
+                (place-fret 5 3 "D"  ,@fret-diagram-root-format)
+                (place-fret 5 5 "E"  ,@fret-diagram-pentatonic-format)
+                (place-fret 4 2 "F♯" ,@fret-diagram-triad-format)
+                (place-fret 4 3 "G"  ,@fret-diagram-other-format)
+                (place-fret 4 5 "A"  ,@fret-diagram-triad-format)
+                (place-fret 3 2 "B"  ,@fret-diagram-pentatonic-format)
+                (place-fret 3 4 "C♯" ,@fret-diagram-other-format)
+                (place-fret 3 5 "D"  ,@fret-diagram-root-format)
+                (place-fret 3 7 "E"  ,@fret-diagram-pentatonic-format)
+                (place-fret 2 5 "F♯" ,@fret-diagram-triad-format)
+                (place-fret 2 6 "G"  ,@fret-diagram-other-format)
+                (place-fret 2 8 "A"  ,@fret-diagram-triad-format)
+                (place-fret 1 5 "B"  ,@fret-diagram-pentatonic-format)
+                (place-fret 1 7 "C♯" ,@fret-diagram-other-format)
+                (place-fret 1 8 "D"  ,@fret-diagram-root-format))
+            }
           }
         }
       >>
@@ -174,24 +193,6 @@ scale-fret-diagram = \markup {
 
 \markup { \vspace #1 }
 
-scale-fret-diagram = \markup {
-  \fret-diagram-verbose #`(
-    (place-fret 5 3 "E♭" ,@fret-diagram-root-format)
-    (place-fret 5 5 "F"  ,@fret-diagram-pentatonic-format)
-    (place-fret 4 2 "G"  ,@fret-diagram-triad-format)
-    (place-fret 4 3 "A♭" ,@fret-diagram-other-format)
-    (place-fret 4 5 "B♭" ,@fret-diagram-triad-format)
-    (place-fret 3 2 "C"  ,@fret-diagram-pentatonic-format)
-    (place-fret 3 4 "D"  ,@fret-diagram-other-format)
-    (place-fret 3 5 "E♭" ,@fret-diagram-root-format)
-    (place-fret 3 7 "F"  ,@fret-diagram-pentatonic-format)
-    (place-fret 2 5 "G"  ,@fret-diagram-triad-format)
-    (place-fret 2 6 "A♭" ,@fret-diagram-other-format)
-    (place-fret 2 8 "B♭" ,@fret-diagram-triad-format)
-    (place-fret 1 5 "C"  ,@fret-diagram-pentatonic-format)
-    (place-fret 1 7 "D"  ,@fret-diagram-other-format)
-    (place-fret 1 8 "E♭" ,@fret-diagram-root-format))
-}
 \score {
   <<
     \new Staff {
@@ -200,8 +201,33 @@ scale-fret-diagram = \markup {
         { \transpose c e-flat { \music } }
         {
           s4^\markup { \combine
-            \transparent \draw-line #'(0 . -8.5)
-            \override #`(size . ,fret-diagram-size) \fret-diagram-container \scale-fret-diagram
+            \postscript #"
+              2.035 1.24 0.8 0 360 arc closepath
+              9.535 1.24 0.8 0 360 arc closepath
+              17.035 1.24 0.8 0 360 arc closepath
+              28.285 3.72 0.8 0 360 arc closepath
+              28.285 -1.24 0.8 0 360 arc closepath
+              0.85 setgray fill
+            "
+            \override #`(size . ,fret-diagram-size)
+            \fret-diagram-container {
+              \fret-diagram-verbose #`(
+                (place-fret 5 3 "E♭" ,@fret-diagram-root-format)
+                (place-fret 5 5 "F"  ,@fret-diagram-pentatonic-format)
+                (place-fret 4 2 "G"  ,@fret-diagram-triad-format)
+                (place-fret 4 3 "A♭" ,@fret-diagram-other-format)
+                (place-fret 4 5 "B♭" ,@fret-diagram-triad-format)
+                (place-fret 3 2 "C"  ,@fret-diagram-pentatonic-format)
+                (place-fret 3 4 "D"  ,@fret-diagram-other-format)
+                (place-fret 3 5 "E♭" ,@fret-diagram-root-format)
+                (place-fret 3 7 "F"  ,@fret-diagram-pentatonic-format)
+                (place-fret 2 5 "G"  ,@fret-diagram-triad-format)
+                (place-fret 2 6 "A♭" ,@fret-diagram-other-format)
+                (place-fret 2 8 "B♭" ,@fret-diagram-triad-format)
+                (place-fret 1 5 "C"  ,@fret-diagram-pentatonic-format)
+                (place-fret 1 7 "D"  ,@fret-diagram-other-format)
+                (place-fret 1 8 "E♭" ,@fret-diagram-root-format))
+            }
           }
         }
       >>
