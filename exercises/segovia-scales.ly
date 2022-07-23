@@ -247,3 +247,80 @@ fret-diagram-size = 2.5
     }
   >>
 }
+
+\markup { \vspace #1 }
+
+music = \relative {
+  \key f \major
+  \time 4/4
+
+  f,4-1 g8-3 a-0 b-flat-1 c-3 d-1 e-3 |
+  f4-4 g8-1 a-3 b-flat-4 c-1 d-3 e-1 |
+  f4-2 g8-4 a-1 b-flat-2 c-4 d-1 e-3 |
+  f4-4 e8-3 d-1 c-4 b-flat-2 a-1 g-4 |
+  f4-2 e8-1 d-3 c-1 b-flat-4 a-3 g-1 |
+  f4-4 e8-3 d-1 c-3 b-flat-1 a-0 g-3 |
+  f4-1
+}
+
+\score {
+  <<
+    \new Staff {
+      \clef "treble_8"
+      <<
+        { \music }
+        {
+          s4^\markup { \combine
+            % x-coordinate = size * fret-distance * (fret-number - 0.5) + 0.16
+            %              = 2.5 * 1.5 * (fret-number − 0.5) + 1.5
+            \postscript #"
+              10.875 1.24 0.8 0 360 arc closepath
+              18.375 1.24 0.8 0 360 arc closepath
+              25.875 1.24 0.8 0 360 arc closepath
+              33.375 1.24 0.8 0 360 arc closepath
+              44.625 3.72 0.8 0 360 arc closepath
+              44.625 -1.24 0.8 0 360 arc closepath
+              0.85 setgray fill
+            "
+            \override #`(size . ,fret-diagram-size)
+            \fret-diagram-container {
+              \fret-diagram-verbose #`(
+                (place-fret 6 1 "F" ,@fret-diagram-root-format)
+                (place-fret 6 3 "G"  ,@fret-diagram-pentatonic-format)
+                (open       5   "A"  ,@fret-diagram-triad-format)
+                (place-fret 5 1 "B♭" ,@fret-diagram-other-format)
+                (place-fret 5 3 "C" ,@fret-diagram-triad-format)
+                (place-fret 5 5 "D"  ,@fret-diagram-pentatonic-format)
+                (place-fret 5 7 "E"  ,@fret-diagram-other-format)
+                (place-fret 5 8 "F" ,@fret-diagram-root-format)
+                (place-fret 4 5 "G"  ,@fret-diagram-pentatonic-format)
+                (place-fret 4 7 "A"  ,@fret-diagram-triad-format)
+                (place-fret 4 8 "B♭" ,@fret-diagram-other-format)
+                (place-fret 3 5 "C" ,@fret-diagram-triad-format)
+                (place-fret 3 7 "D"  ,@fret-diagram-pentatonic-format)
+                (place-fret 2 5 "E"  ,@fret-diagram-other-format)
+                (place-fret 2 6 "F" ,@fret-diagram-root-format)
+                (place-fret 2 8 "G"  ,@fret-diagram-pentatonic-format)
+                (place-fret 1 5 "A"  ,@fret-diagram-triad-format)
+                (place-fret 1 6 "B♭" ,@fret-diagram-other-format)
+                (place-fret 1 8 "C" ,@fret-diagram-triad-format)
+                (place-fret 1 10 "D"  ,@fret-diagram-pentatonic-format)
+                (place-fret 1 12 "E"  ,@fret-diagram-other-format)
+                (place-fret 1 13 "F" ,@fret-diagram-root-format))
+            }
+          }
+        }
+      >>
+    }
+    \new TabStaff {
+      <<
+        { \music }
+        {
+          s2. \set TabStaff.minimumFret = #5 \set TabStaff.restrainOpenStrings = ##t s4 |
+          s1*4 |
+          s2 \unset TabStaff.minimumFret \set TabStaff.restrainOpenStrings = ##f s2 |
+        }
+      >>
+    }
+  >>
+}
