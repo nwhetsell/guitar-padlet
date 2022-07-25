@@ -346,11 +346,11 @@ music = {
           s2^\markup { \left-align
             \fret-diagram-verbose #'(
               (mute 6)
-              (place-fret 5 7 1)
+              (place-fret 5 7 2)
               (mute 4)
-              (place-fret 3 8 2)
+              (place-fret 3 8 3)
               (place-fret 2 9 4)
-              (place-fret 1 8 3)
+              (place-fret 1 6 1)
             )
           }
           % A7 ♯11
