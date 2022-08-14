@@ -1289,12 +1289,12 @@ music = {
       Ascending/descending bass harmonoy uses three qualities of chords: major,
       minor, and dominant. This concept is much like bac cycling. The difference
       is that you can approach your key chord from above or below. All examples
-      use a II-V-I in \concat { C \super △. } The II and V are the chords that
-      will be reharmonized on the way to \concat { C \super △. } First, count
+      use a II-V-I in \concat { C \super △ . } The II and V are the chords that
+      will be reharmonized on the way to \concat { C \super △ . } First, count
       how many melody notes there are, which indicates how many bass notes will
       be used. For example, there are four melody notes before
-      \concat { C \super △, } so four bass notes can be played, chromatically
-      ascending, that resolve to \concat { C \super △. } The next step is to
+      \concat { C \super △ , } so four bass notes can be played, chromatically
+      ascending, that resolve to \concat { C \super △ . } The next step is to
       harmonize the bass with the melody. I have given three examples using
       dominant, minor, and major. Generally, try to stay with one
       quality—meaning that if you decide to use dominant, use this until you
@@ -1310,7 +1310,7 @@ music = {
       7th chord, I could still use the minor 3rd by creating minor / major 7th
       chord. The third melody notes is F with B in the bass, creating a
       \concat { \raise #0.4 \teeny \flat 5 } sound resolving to
-      \concat { C \super △. } The figures show what the chrod quality would be
+      \concat { C \super △ . } The figures show what the chrod quality would be
       using the major, minor, and dominant 7th chrods.
     }
     \vspace #0.5
