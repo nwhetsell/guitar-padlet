@@ -54,7 +54,8 @@ music = {
       d-flat4/f g-flat g-flat/b-flat g-flat2/d-flat |
       c-flat4/e-flat d-flat a-flat g-flat/b-flat |
       a-flat4 e-flat/g f:m |
-      e:dim7
+      e1*5/4:dim7 |
+      f2:m
     }
     \new Staff \relative {
       \clef "treble_8"
