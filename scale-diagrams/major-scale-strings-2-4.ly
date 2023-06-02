@@ -62,7 +62,7 @@
         (place-fret 1 13 "4" ,@fret-diagram-other-format)
 
         (place-fret 3  5 "1" ,@fret-diagram-root-format)
-        (place-fret 3  7 "2" ,@fret-diagram-other-format)
+        (place-fret 3  7 "2" ,@fret-diagram-pentatonic-format)
         (place-fret 2  5 "3" ,@fret-diagram-triad-format)
         (place-fret 2  6 "4" ,@fret-diagram-other-format)
         (place-fret 2  8 "5" ,@fret-diagram-triad-format)
@@ -71,7 +71,7 @@
         (place-fret 1  8 "1" ,@fret-diagram-root-format)
 
         (place-fret 3 17 "1" ,@fret-diagram-root-format)
-        (place-fret 3 19 "2" ,@fret-diagram-other-format)
+        (place-fret 3 19 "2" ,@fret-diagram-pentatonic-format)
         (place-fret 2 17 "3" ,@fret-diagram-triad-format)
         (place-fret 2 18 "4" ,@fret-diagram-other-format)
         (place-fret 2 20 "5" ,@fret-diagram-triad-format)
