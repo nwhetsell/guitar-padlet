@@ -104,7 +104,7 @@ music = {
   \key g \major
   \set TabStaff.restrainOpenStrings = ##t
   \set TabStaff.minimumFret = #7
-  \partial 8 { b-flat'16 a-flat } |
+  \partial 8 { b-flat'16 a } |
   g16 f d e-flat e g b-flat d c8 \grace a-flat16 \glissando a8 g \grace e-flat16 \glissando e8 |
   \set TabStaff.minimumFret = #5
   d8[ \grace { a16 \glissando b-flat \glissando } a8] g2. |
@@ -132,7 +132,7 @@ music = {
   \set TabStaff.restrainOpenStrings = ##t
   \set TabStaff.minimumFret = #4
   r2 r16 f g a-flat c a b-flat c |
-  d-flat16 f c' b-flat \glissando a-flat f e-flat d-flat c a-flat f d-flat \set TabStaff.minimumFret = #3 c8 \grace a!16 \glissando b-flat16 a~ |
+  d-flat16 f c' b-flat \glissando a-flat \set TabStaff.minimumFret = #3 f e-flat d-flat c a-flat f d-flat c8 \grace a!16 \glissando b-flat16 a~ |
   4 r \set TabStaff.minimumFret = #5 f''8 \tuplet 3/2 { 16 b-flat, a! } \set TabStaff.minimumFret = #9 a-flat'8 \tuplet 3/2 { 16 d-flat, c } |
   a'!2 r |
 }
