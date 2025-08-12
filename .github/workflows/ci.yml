@@ -12,9 +12,7 @@ jobs:
         submodules: recursive
 
     - name: Install LilyPond
-      run: |
-        brew install nwhetsell/lilypond/lilypond-unstable
-        brew link lilypond-unstable
+      run: brew install nwhetsell/lilypond/lilypond-unstable && brew link lilypond-unstable
 
     - name: Create PDFs
       run: |
